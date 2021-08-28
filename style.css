@@ -83,6 +83,7 @@ button:hover
 	display: grid;
 	/*grid-template-columns: 1fr 1fr 1fr 1fr;*/
 	grid-template-columns: repeat(4,1fr);
+
 	grid-row-gap: 20px;
 	grid-column-gap: 20px;
 	padding: 20px;
@@ -90,8 +91,9 @@ button:hover
 .equal-sign
 {
 	height: 100%;
-	grid-row-start: 2;
+	/*grid-row-start: 2;
 	grid-row-end: 6;
 	grid-column-start: 4;
-	grid-column-end: 5;
+	grid-column-end: 5;*/
+	grid-area: 2 / 4 / 6 / 5;
 }
