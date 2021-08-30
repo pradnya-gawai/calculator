@@ -5,7 +5,7 @@ function display(val)
 }
 function clr()
 {
- document.getElementById("textval").value = "";
+ document.getElementById("textval").value ="0";
 }
 function ans()
 {
