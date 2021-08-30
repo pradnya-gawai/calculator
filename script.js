@@ -7,9 +7,9 @@ function clr()
 {
  document.getElementById("textval").value = "";
 }
-function evaluate()
+function ans()
 {
  var x = document.getElementById("textval").value
- var y = eval(x)
- document.getElementById("textval").value = y
+ // var y = 
+ document.getElementById("textval").value = eval(x)
 }
