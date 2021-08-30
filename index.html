@@ -8,31 +8,32 @@
 </head>
 <body>
 	<div class="calculator">
-		<input type="text" class="calculator-screen" value="0" disabled>
+		<input type="text" class="calculator-screen" id="textval" value="0" disabled>
 		<div class="calculator-keys">
-			<button type="button" class="operator" value ="+">+</button>
-			<button type="button" class="operator" value="-" >-</button>
-			<button type="button" class="operator" value="*">&times</button>
-			<button type="button" class="operator" value="/">&divide</button>
+			<button type="button" class="operator" value ="+" onclick="display('+')">+</button>
+			<button type="button" class="operator" value="-" onclick="display('-')">-</button>
+			<button type="button" class="operator" value="*" onclick="display('*')">&times</button>
+			<button type="button" class="operator" value="/" onclick="display('/')">&divide</button>
 			
-			<button type="button"  value="7"	>7</button>
-			<button type="button"  value="8"	>8</button>
-			<button type="button"  value="9"	>9</button>
+			<button type="button"  value="7" onclick="display('7')" >7</button>
+			<button type="button"  value="8" onclick="display('8')" >8</button>
+			<button type="button"  value="9" onclick="display('9')" >9</button>
 
-			<button type="button"  value="4"	>4</button>
-			<button type="button"  value="5"	>5</button>
-			<button type="button"  value="6"	>6</button>
+			<button type="button"  value="4" onclick="display('4')" >4</button>
+			<button type="button"  value="5" onclick="display('5')" >5</button>
+			<button type="button"  value="6" onclick="display('6')" >6</button>
 
-			<button type="button"  value="1"	>1</button>
-			<button type="button"  value="2"	>2</button>
-			<button type="button"  value="3"	>3</button>
+			<button type="button"  value="1" onclick="display('1')" > 1</butto>
+			<button type="button"  value="2" onclick="display('2')" >2</button>
+			<button type="button"  value="3"onclick="display('3')" >3</button>
 
-			<button type="button" value="0" 	>0</button>
-			<button type="button" class="decimal" value="." 	>.</button>
-			<button type="button" class="all-clear" value="all-clear" 	> AC</button>
+			<button type="button" value="0"  onclick="display('0')" >0</button>
+			<button type="button" class="decimal" value="."  onclick="display('.')" >.</button>
+			<button type="button" class="all-clear" value="all-clear" onclick="clr();" > AC</button>
 
-			<button type="button" class="equal-sign" value="=" 	>=</button>
+			<button type="button" class="equal-sign" value="=" onclick="evaluate();" 	>=</button>
 			</div>
 		</div>
+		<script src="script.js"></script>
 </body>
 </html>
