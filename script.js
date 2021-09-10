@@ -1,15 +1,25 @@
-function display(val)
-{
-	 document.getElementById("textval").value+=val
+var exp =document.getElementById("textval")
+/**/
+const display=(val) =>exp.value+=val
 
-}
-function clr()
-{
- document.getElementById("textval").value ="0";
-}
-function ans()
-{
- var x = document.getElementById("textval").value
- // var y = 
- document.getElementById("textval").value = eval(x)
-}
+/*All Clear  Function*/
+const clr= () =>exp.value=''
+const myempty=()=>exp.value='';
+
+/*Evaluteting Expression*/
+const ans =()=>{
+	var x = exp.value
+ 	const re = /(?:(?:^|[-+_*/])(?:\s*-?\d+(\.\d+)?(?:[eE][+-]?\d+)?\s*))+$/;
+ try{
+ 	if(re.test(x)){
+ 		exp.value = eval(x)
+ 	}
+ 	else {
+ 		exp.value = "Error!";
+
+ 	}}
+ catch(err){
+ 		console.log(err);
+ 	}
+ }
+ 
