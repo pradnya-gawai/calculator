@@ -1,12 +1,16 @@
+
 .calculator
 {
-	border: 1px solid black;
+border: 1px solid black;
+background-color: #dbd3d3;
 }
 .calculator-screen
 {
 	border: 1px solid red;
 	color:white;
 }
+
+
 html
 {
 	font-size:62.5%;
@@ -57,7 +61,8 @@ button:hover
 	background-color: #eaeaea;
 }
 .operator {
-  color: #337cac;
+  /*color: #337cac;*/
+  font-size: 30px;
 }
 
 .all-clear {
@@ -88,6 +93,8 @@ button:hover
 	grid-row-gap: 20px;
 	grid-column-gap: 20px;
 	padding: 20px;
+	  transition: all .15s linear 0s;
+
 }
 .equal-sign
 {
