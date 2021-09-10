@@ -8,12 +8,12 @@
 </head>
 <body>
 	<div class="calculator">
-		<input type="text" class="calculator-screen" id="textval" value="0" disabled>
+		<input type="text" class="calculator-screen" id="textval" placeholder="0" disabled>
 		<div class="calculator-keys">
-			<button type="button" class="operator" value ="+" onclick="display('+')">+</button>
-			<button type="button" class="operator" value="-" onclick="display('-')">-</button>
-			<button type="button" class="operator" value="*" onclick="display('*')">&times</button>
-			<button type="button" class="operator" value="/" onclick="display('/')">&divide</button>
+			<button title="Addition" type="button" class="operator" value ="+" onclick="display('+')">+</button>
+			<button  title="Substraction"type="button" class="operator" value="-" onclick="display('-')">-</button>
+			<button title="Multiplication" type="button" class="operator" value="*" onclick="display('*')">&times</button>
+			<button title="Division" type="button" class="operator" value="/" onclick="display('/')">&divide</button>
 			
 			<button type="button"  value="7" onclick="display('7')" >7</button>
 			<button type="button"  value="8" onclick="display('8')" >8</button>
@@ -28,8 +28,8 @@
 			<button type="button"  value="3"onclick="display('3')" >3</button>
 
 			<button type="button" value="0"  onclick="display('0')" >0</button>
-			<button type="button" class="decimal" value="."  onclick="display('.')" >.</button>
-			<button type="button" class="all-clear" value="all-clear" onclick="clr();" > AC</button>
+			<button type="button" class="decimal" value="."  onclick="display('.')" style="font-size:40px">.</button>
+			<button title="all-clear" type="button" class="all-clear" value="all-clear" onclick="clr();" > AC</button>
 
 			<button type="button" class="equal-sign" value="=" onclick="ans();">=</button>
 			</div>
