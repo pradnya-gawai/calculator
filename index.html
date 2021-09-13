@@ -10,28 +10,31 @@
 	<div class="calculator">
 		<input type="text" class="calculator-screen" id="textval" placeholder="0" disabled>
 		<div class="calculator-keys">
-			<button title="Addition" type="button" class="operator" value ="+" onclick="display('+')">+</button>
-			<button  title="Substraction"type="button" class="operator" value="-" onclick="display('-')">-</button>
-			<button title="Multiplication" type="button" class="operator" value="*" onclick="display('*')">&times</button>
-			<button title="Division" type="button" class="operator" value="/" onclick="display('/')">&divide</button>
+			    <audio id="audio" src="soundSoft.mp3"></audio>
+
+			<button title="Addition" type="button" class="operator" value ="+" onclick="display('+'); play();">+</button>
+			<button  title="Substraction"type="button" class="operator" value="-" onclick="display('-'); play();">-</button>
+			<button title="Multiplication" type="button" class="operator" value="*" onclick="display('*'); play();">&times</button>
+			<button title="Division" type="button" class="operator" value="/" onclick="display('/'); play();">&divide</button>
 			
-			<button type="button"  value="7" onclick="display('7')" >7</button>
-			<button type="button"  value="8" onclick="display('8')" >8</button>
-			<button type="button"  value="9" onclick="display('9')" >9</button>
+			<button type="button"  value="7" 
+			 onclick="display('7'); play();" >7</button>
+			<button type="button"  value="8" onclick="display('8');play();" >8</button>
+			<button type="button"  value="9" onclick="display('9'); play();" >9</button>
 
-			<button type="button"  value="4" onclick="display('4')" >4</button>
-			<button type="button"  value="5" onclick="display('5')" >5</button>
-			<button type="button"  value="6" onclick="display('6')" >6</button>
+			<button type="button"  value="4" onclick="display('4'); play();" >4</button>
+			<button type="button"  value="5" onclick="display('5'); play();" >5</button>
+			<button type="button"  value="6" onclick="display('6'); play();" >6</button>
 
-			<button type="button"  value="1" onclick="display('1')" > 1</butto>
-			<button type="button"  value="2" onclick="display('2')" >2</button>
-			<button type="button"  value="3"onclick="display('3')" >3</button>
+			<button type="button"  value="1" onclick="display('1'); play();" > 1</butto>
+			<button type="button"  value="2" onclick="display('2'); play();" >2</button>
+			<button type="button"  value="3"onclick="display('3'); play();" >3</button>
 
-			<button type="button" value="0"  onclick="display('0')" >0</button>
-			<button type="button" class="decimal" value="."  onclick="display('.')" style="font-size:30px">.</button>
-			<button title="all-clear" type="button" class="all-clear" value="all-clear" onclick="clr();" > AC</button>
+			<button type="button" value="0"  onclick="display('0'); play();" >0</button>
+			<button type="button" class="decimal" value="."  onclick="display('.'); play();" style="font-size:30px">.</button>
+			<button title="all-clear" type="button" class="all-clear" value="all-clear" onclick="clr(); play();" > AC</button>
 
-			<button type="button" class="equal-sign" value="=" onclick="ans();">=</button>
+			<button type="button" class="equal-sign" value="=" onclick="ans(); play()">=</button>
 			</div>
 		</div>
 		<script src="script.js"></script>
