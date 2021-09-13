@@ -22,4 +22,9 @@ const ans =()=>{
  		console.log(err);
  	}
  }
+ function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+
+      }
  
