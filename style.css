@@ -2,7 +2,7 @@
 .calculator
 {
 border: 1px solid black;
-background-color: #dbd3d3;
+background-color:#DCDCDC;
 }
 .calculator-screen
 {
@@ -61,7 +61,7 @@ button:hover
 	background-color: #eaeaea;
 }
 .operator {
-  /*color: #337cac;*/
+  /*color:red*/
   font-size: 30px;
 }
 
