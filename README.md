@@ -1,4 +1,4 @@
-# 📱 Basic HTML Calculator
+# 📱 Basic HTML Calculator https://pradnya-gawai.github.io/calculator/
 
 A simple web-based calculator built using **HTML**, **CSS**, and **JavaScript**. This app allows users to perform basic arithmetic operations like addition, subtraction, multiplication, and division.
 
